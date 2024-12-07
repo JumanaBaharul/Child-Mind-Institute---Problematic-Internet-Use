@@ -5,25 +5,25 @@ This project leverages the Healthy Brain Network (HBN) dataset to predict the Se
 Problematic internet use among children and adolescents is a growing concern in today's digital age. Existing methods to measure this issue often require professional assessments, leading to access, cultural, and linguistic barriers. This project proposes utilizing easily obtainable physical fitness indicators as proxies to detect problematic internet use, particularly in contexts lacking clinical expertise.
 
 ## Dataset
-**Demographics:** Age and sex data.< br / >
-**Internet Use:** Daily usage hours.< br / >
-**Physical Measures:** Metrics like blood pressure, heart rate, BMI, and fitness assessments.< br / >
-**Questionnaires:** Sleep disturbances, physical activity levels, and internet addiction.< br / >
-**Target Variable**: PCIAT_Total-derived SII (Severity Impairment Index) with four levels: None, Mild, Moderate, and Severe.< br / >
+**Demographics:** Age and sex data.   
+**Internet Use:** Daily usage hours.
+**Physical Measures:** Metrics like blood pressure, heart rate, BMI, and fitness assessments.
+**Questionnaires:** Sleep disturbances, physical activity levels, and internet addiction.
+**Target Variable**: PCIAT_Total-derived SII (Severity Impairment Index) with four levels: None, Mild, Moderate, and Severe.
 Approach
 We implemented multiple predictive models, combining dimensionality reduction techniques and boosting algorithms, to analyze physical activity data and predict SII levels. The core architecture used was a Sparse Autoencoder (SAE), paired with ensemble learning models such as LightGBM, XGBoost, and CatBoost. Key variations included:
 
-**Enhanced Normalization:** Layer normalization for training stability.< br / >
-**Advanced Activation:** Leaky ReLU for improved gradient flow.< br / >
-**Dropout Regularization:** To prevent overfitting.< br / >
-**Sparse Representations:** Efficient feature encoding.< br / >
+**Enhanced Normalization:** Layer normalization for training stability.
+**Advanced Activation:** Leaky ReLU for improved gradient flow.
+**Dropout Regularization:** To prevent overfitting.
+**Sparse Representations:** Efficient feature encoding.
 
 ## Results and Conclusion
-Among the various model architectures, the Sparse Autoencoder (SAE) + XGBoost achieved the best performance:< br / >
+Among the various model architectures, the Sparse Autoencoder (SAE) + XGBoost achieved the best performance:
 
-Mean Train QWK: 0.9255<br/>
-Mean Validation QWK: 0.4996< br / >
-Optimized QWK SCORE: 0.538< br / >
+Mean Train QWK: 0.9255
+Mean Validation QWK: 0.4996
+Optimized QWK SCORE: 0.538
 The Sparse Autoencoder successfully captured high-dimensional patterns, while XGBoost effectively handled non-linear relationships in the data. This combination proved to be robust and efficient, setting a benchmark for predicting problematic internet use based on physical activity data.
 
 # Future Scope
