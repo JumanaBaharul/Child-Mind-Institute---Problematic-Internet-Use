@@ -9,21 +9,23 @@ Problematic internet use among children and adolescents is a growing concern in 
 **Internet Use:** Daily usage hours.  
 **Physical Measures:** Metrics like blood pressure, heart rate, BMI, and fitness assessments.  
 **Questionnaires:** Sleep disturbances, physical activity levels, and internet addiction.  
-**Target Variable**: PCIAT_Total-derived SII (Severity Impairment Index) with four levels: None, Mild, Moderate, and Severe.  
-Approach
+**Target Variable**: PCIAT_Total-derived SII (Severity Impairment Index) with four levels: None, Mild, Moderate, and Severe.
+
+## Approach
 We implemented multiple predictive models, combining dimensionality reduction techniques and boosting algorithms, to analyze physical activity data and predict SII levels. The core architecture used was a Sparse Autoencoder (SAE), paired with ensemble learning models such as LightGBM, XGBoost, and CatBoost. Key variations included:
 
-**Enhanced Normalization:** Layer normalization for training stability.
-**Advanced Activation:** Leaky ReLU for improved gradient flow.
-**Dropout Regularization:** To prevent overfitting.
-**Sparse Representations:** Efficient feature encoding.
+**Enhanced Normalization:** Layer normalization for training stability.  
+**Advanced Activation:** Leaky ReLU for improved gradient flow.  
+**Dropout Regularization:** To prevent overfitting.  
+**Sparse Representations:** Efficient feature encoding.  
 
 ## Results and Conclusion
 Among the various model architectures, the Sparse Autoencoder (SAE) + XGBoost achieved the best performance:
 
-Mean Train QWK: 0.9255
-Mean Validation QWK: 0.4996
-Optimized QWK SCORE: 0.538
+**Mean Train QWK:** 0.9255  
+**Mean Validation QWK:** 0.4996  
+**Optimized QWK SCORE:** 0.538  
+
 The Sparse Autoencoder successfully captured high-dimensional patterns, while XGBoost effectively handled non-linear relationships in the data. This combination proved to be robust and efficient, setting a benchmark for predicting problematic internet use based on physical activity data.
 
 # Future Scope
