@@ -6,10 +6,10 @@ Problematic internet use among children and adolescents is a growing concern in 
 
 ## Dataset
 **Demographics:** Age and sex data.   
-**Internet Use:** Daily usage hours.
-**Physical Measures:** Metrics like blood pressure, heart rate, BMI, and fitness assessments.
-**Questionnaires:** Sleep disturbances, physical activity levels, and internet addiction.
-**Target Variable**: PCIAT_Total-derived SII (Severity Impairment Index) with four levels: None, Mild, Moderate, and Severe.
+**Internet Use:** Daily usage hours.  
+**Physical Measures:** Metrics like blood pressure, heart rate, BMI, and fitness assessments.  
+**Questionnaires:** Sleep disturbances, physical activity levels, and internet addiction.  
+**Target Variable**: PCIAT_Total-derived SII (Severity Impairment Index) with four levels: None, Mild, Moderate, and Severe.  
 Approach
 We implemented multiple predictive models, combining dimensionality reduction techniques and boosting algorithms, to analyze physical activity data and predict SII levels. The core architecture used was a Sparse Autoencoder (SAE), paired with ensemble learning models such as LightGBM, XGBoost, and CatBoost. Key variations included:
 
