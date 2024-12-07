@@ -1,5 +1,3 @@
-# Child-Mind-Institute---Problematic-Internet-
-
 # Problematic Internet Use Prediction Model
 This project leverages the Healthy Brain Network (HBN) dataset to predict the Severity Impairment Index (SII), a measure of problematic internet use in children and adolescents. Using accessible physical fitness and activity data as proxies, we aim to identify early indicators of unhealthy internet habits, promoting healthier digital behavior.
 
