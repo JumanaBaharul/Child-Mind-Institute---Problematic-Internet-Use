@@ -29,7 +29,7 @@ Among the various model architectures, the Sparse Autoencoder (SAE) + XGBoost ac
 The Sparse Autoencoder successfully captured high-dimensional patterns, while XGBoost effectively handled non-linear relationships in the data. This combination proved to be robust and efficient, setting a benchmark for predicting problematic internet use based on physical activity data.
 
 # Future Scope
-**Integration with Wearable Technology:** Real-time monitoring for immediate feedback and intervention.< br / >
-**Personalized Interventions:** Tailored strategies for reducing internet use based on individual data.< br / >
-**Cross-Disciplinary Collaboration:** Involving experts in psychology, education, and technology for a holistic approach.< br / >
-**Natural Language Processing (NLP):** Analyzing social media and online communication for early signs of problematic behavior.< br / >
+**Integration with Wearable Technology:** Real-time monitoring for immediate feedback and intervention.  
+**Personalized Interventions:** Tailored strategies for reducing internet use based on individual data.  
+**Cross-Disciplinary Collaboration:** Involving experts in psychology, education, and technology for a holistic approach.  
+**Natural Language Processing (NLP):** Analyzing social media and online communication for early signs of problematic behavior.  
