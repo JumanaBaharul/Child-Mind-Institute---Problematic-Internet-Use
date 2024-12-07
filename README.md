@@ -21,7 +21,7 @@ We implemented multiple predictive models, combining dimensionality reduction te
 ## Results and Conclusion
 Among the various model architectures, the Sparse Autoencoder (SAE) + XGBoost achieved the best performance:< br / >
 
-Mean Train QWK: 0.9255< br / >
+Mean Train QWK: 0.9255<br/>
 Mean Validation QWK: 0.4996< br / >
 Optimized QWK SCORE: 0.538< br / >
 The Sparse Autoencoder successfully captured high-dimensional patterns, while XGBoost effectively handled non-linear relationships in the data. This combination proved to be robust and efficient, setting a benchmark for predicting problematic internet use based on physical activity data.
